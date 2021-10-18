@@ -1,64 +1,104 @@
-<!--This is the Document type-->
-<!DOCTYPE html>
-<html lang="en">
+/*This is standard margin and padding set for my site*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.body{
+    width: 80%
+}
+/*These are my containers to help center*/
+.container-1{
+    display:flex;
+    justify-content:center;
+}
 
-   <!--This is my title for the Final Jeopardy Page--> 
-    <title>Final Jeopardy Page</title>
-<!--Ths is my reference to my style sheet-->
-<link rel="stylesheet" href="./jeop/main.css" />
+.container-2 {
+    display:flex;
+    justify-content: center;
+}
 
-</head>
+/*this is my main wrapper that contains all my divs with images for my grid-aka my jeopardy board*/
+.wrapper{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:repeat(8,1fr);
+    width: 10vw;
+    height: 20vh;
+  
+    justify-content: center;
+}
+/*Here I set background colors and padding  the next is setting the color for every other odd child */
+.wrapper > div{
+    background: #000;;
+   
+    
+}
 
+.wrapper > div:nth-child(odd) {
+    background:#ddd;
+    padding:1em;
+}
 
+/*the following three headers were aligned center for my page*/
+h1 {
+    text-align: center;
+    
+}
 
-<!--This is my jeopardy gif image -->
-<center><img src="images/logo2.gif" alt="jeopardy banner"
-    title="jeopardy banner that sparkles"></a></div></center>
+h2{
+    text-align: center;
+}
 
-
-
-
-<body>
-
-    <!--This is my audio loop for the jeopardy theme song-->
-    <audio auto loop>
-
-        <source src="audio/audio.html" type="audio/mpeg">
-
-    </audio>
-
-<!--This is the Category , the image below of finaljep2.jpeg will be where the category will load and be diplayed-->
-    <center>        <P><b>CATEGORY</b></P>
-<br>
-
-<!--This is the picture of final jeopardy that will hold the category item-->
-            <p><a href="/index.html"><img src="images/finaljep2.jpg" alt="Pictue of Final Jeopardy" title="This will be the Category Box"
-                        alt="picture of final jeopardy" title="picture of final jeopardy" </a></p>
-
-
-    <!--This Where My answer category will be-->
-            <br>            <p><img src="images/whatis.png" alt="amount submission" title="answer submission button to write in answer">
-            </p>
-<br>
-<!--This is where the players will submit Their Bet and Place the amount they are betting-->
-            <p><img src="images/guess.png" alt="amount button" title="submit your amount"> OR <img src="images/guess.png"
-                    alt="bet button" title="bet button"></p>
-
-<br>
-<!--This is a link to the previous page of double jeopardy-->
-                    <p><a href="/round-2.html">Previous Page</a></p>             
-                </center>
-
-
-        </div>
-    </div>
+h3 {
+    text-align: center;
+}
 
 
-</body>
+/*Here I centered my images*/
+img {
+    justify-self: center;
+    
+}
 
-</html> 
+
+
+p{/*Here I justified where my paragraph will lay in my grid between colums*/
+    grid-column-start: 2;
+  grid-column-end: 6;
+  height: auto;
+  width: 2fr;
+  justify-self: center;
+}
+
+body {/* Here is the margin for my body*/ 
+    
+    margin: 8px;
+    padding: 8px;
+}
+/* Here I tried to make my website mobile yet I was unsure how to do this*/ 
+@media screen and (max-width: 450px) {
+    #wrapper {
+        display:grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows:repeat(8,1fr);
+        width: 50vw;
+        height: 50vh;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+   
+    
+}
+
+@media screen and (min-width: 451px) and  (max-width: 800px) {
+    #wrapper {
+        display:grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows:repeat(8,1fr);
+        width: 50vw;
+        height: 50vh;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+}

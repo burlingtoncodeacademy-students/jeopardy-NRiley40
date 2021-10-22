@@ -13,40 +13,35 @@
 
 </head>
 
-
-
-<!--This is my Jeopardy Image gif to greet player-->
-<header>
-  <center><img src="images/logo2.gif" alt="jeopardy banner"
-      title="jeopardy banner that sparkles and links to round1"></a></div>
-  </center>
-
-  <!--This is my greet player header to round two -->
-  <h3><b>DOUBLE JEOPARDY: SECOND ROUND</b></h3>
-</header>
-
-<!--This is my template spot where I will notify the turn to each player-->
-<center>
-  <div><img src="images/player1.jpg" alt="jeopardy banner" title="this is an image notifying whose turn it is"></a>
-  </div>
-</center>
-
-
 <body>
 
+  <!--This is my Jeopardy Image gif to greet player-->
+  <header>
+    <center><img src="images/logo2.gif" alt="jeopardy banner"
+        title="jeopardy banner that sparkles and links to round1"></a></div>
+    </center>
+
+    <!--This is my greet player header to round two -->
+    <h3><b>DOUBLE JEOPARDY: SECOND ROUND</b></h3>
+  </header>
+
+  <!--This is my template spot where I will notify the turn to each player-->
+  <center>
+    <div><img src="images/player1.jpg" alt="jeopardy banner" title="this is an image notifying whose turn it is"></a>
+    </div>
+  </center>
+
   <!--this is my autoplay loop of the Jeopardy them music-->
-  <audio auto loop>
+  <div style="display:none"><audio controls autoplay>
 
-    <source src="audio/audio.html" type="audio/mpeg">
-
-  </audio>
-
+      <source src="audio/audio.html" type="audio/mpeg">
+    </audio>
+  </div>
 
   <!--This is my dive class container for my Jeopardy Board grid-->
   <div class="container-1">
     <div class="wrapper">
 
-
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
@@ -74,7 +69,6 @@
       <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
       <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
       <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
-
 
       <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
       <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
@@ -95,13 +89,15 @@
       </p>
 
       <!--This is where a player will either guess or pass a question-->
-      <p><img src="images/guess.png" alt="guess button" title="submit your guess"> OR <img src="images/guess.png"
+      <p><img src="images/guess.png" alt="guess button" title="submit your guess"> OR <img src="images/pass.png"
           alt="pass button" title="pass button for question"></p>
 
       <!--This indicates each players score thus far-->
-      <P><b>SCORE PLAYER 1: 0</b></P>
-      <P><b>SCORE PLAYER 2: 0</b></P>
-      <P><b>SCORE PLAYER 3: 0</b></P>
+      <br><br>
+      <P><b>SCORE</b></P>
+      <P><b>PLAYER 1: 0 </b></P>
+      <p><b>PLAYER 2: 0</b></p>
+      <P><b>PLAYER 3: 0</b></P>
 
       <br>
       <p><b>CLICK IMAGE FOR</b></p>
@@ -113,8 +109,6 @@
 
       <!--This is a link to the previous page aka first round jeopardy-->
       <p><a href="/round-1.html">Previous Page</a></p>
-
-
 
 
     </div>

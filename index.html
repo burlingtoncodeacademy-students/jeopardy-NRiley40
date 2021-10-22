@@ -14,21 +14,24 @@
   <link rel="stylesheet" href="/jeop.css" />
 
 </head>
-
-<!--this is my title to welcome players-->
-<header>
-  <h2><b>WELCOME TO JEOPARDY!</b></h2>
-</header>
-
-
-
+<!--My Jeopardy Audio-->
 <body>
+  <div style="display:none"><audio controls autoplay>
+
+      <source src="audio/audio.html" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+
+  <!--this is my title to welcome players-->
+  <header>
+    <h2><b>WELCOME TO JEOPARDY!</b></h2>
+  </header>
+
+
   <!--This is my audio loop for the jeopardy theme song-->
-  <audio auto loop>
 
-    <source src="audio/audio.html" type="audio/mpeg">
-
-  </audio>
 
 
   <!--This is my Directions to start the game and the image below is a live link to redirect player to Round 1-->
@@ -43,13 +46,8 @@
   <!--This container and wrapper are my jeopardy board grid displayed, what is and guess or pass/ strictly for aesthetic reasons on index page-->
   <div class="container-1">
 
-
-
     <div class="wrapper">
 
-
-
-
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
       <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
@@ -77,8 +75,6 @@
       <img src="images/300-2.png" alt="300 question" title="300 dollar question/ to be coded later">
       <img src="images/300-2.png" alt="300 question" title="300 dollar question/ to be coded later">
       <img src="images/300-2.png" alt="300 question" title="300 dollar question/ to be coded later">
-
-
 
       <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
       <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
@@ -99,15 +95,11 @@
       </p>
 
       <!--This is where a player will either guess or pass a question-->
-      <p><img src="images/guess.png" alt="guess button" title="submit your guess"> OR <img src="images/guess.png"
+      <p><img src="images/guess.png" alt="guess button" title="submit your guess"> OR <img src="images/pass.png"
           alt="pass button" title="pass button for question"></p>
 
     </div>
-
-
-
-
-
+    <script src="index.js"></script>
 </body>
 
 </html>

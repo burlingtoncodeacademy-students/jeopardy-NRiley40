@@ -1,12 +1,120 @@
+<!--This is my Double jeopardy page with doc type-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <title>Round 2 Jeopardy</title>
+
+  <!--This is my css reference for formatting-->
+  <link rel="stylesheet" href="./jeop.css" />
+
 </head>
+
 <body>
-  <h1>Double Jeopardy</h1>
+
+  <!--This is my Jeopardy Image gif to greet player-->
+  <header>
+    <center><img src="images/logo2.gif" alt="jeopardy banner"
+        title="jeopardy banner that sparkles and links to round1"></a></div>
+    </center>
+
+    <!--This is my greet player header to round two -->
+    <h3><b>DOUBLE JEOPARDY: SECOND ROUND</b></h3>
+  </header>
+
+  <!--This is my template spot where I will notify the turn to each player-->
+  <center>
+    <div><img src="images/player1.jpg" alt="jeopardy banner" title="this is an image notifying whose turn it is"></a>
+    </div>
+  </center>
+
+  <!--this is my autoplay loop of the Jeopardy them music-->
+  <div style="display:none"><audio controls autoplay>
+
+      <source src="audio/audio.html" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!--This is my dive class container for my Jeopardy Board grid-->
+  <div class="container-1">
+    <div class="wrapper">
+
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+      <img src="images/category.png" alt="Category" title="Category Pic/ link to be coded">
+
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+      <img src="images/200-2.png" alt="200 question" title="200 dollar question/ to be coded later">
+
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+      <img src="images/400.jpg" alt="400 question" title="400 dollar question/ to be coded later">
+
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+      <img src="images/600.jpg" alt="600 question" title="600 dollar question/ to be coded later">
+
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+      <img src="images/800.png" alt="800 question" title="800 dollar question/ to be coded later">
+
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+      <img src="images/1000.jpg" alt="1000 question" title="1000 dollar question/ to be coded later">
+
+      <!--This i my where a player will click to submit an answer-->
+      <p><img src="images/whatis.png" alt="answer submission" title="answer submission button to write in answer">
+      </p>
+
+      <!--This is where a player will either guess or pass a question-->
+      <p><img src="images/guess.png" alt="guess button" title="submit your guess"> OR <img src="images/pass.png"
+          alt="pass button" title="pass button for question"></p>
+
+      <!--This indicates each players score thus far-->
+      <br><br>
+      <P><b>SCORE</b></P>
+      <P><b>PLAYER 1: 0 </b></P>
+      <p><b>PLAYER 2: 0</b></p>
+      <P><b>PLAYER 3: 0</b></P>
+
+      <br>
+      <p><b>CLICK IMAGE FOR</b></p>
+
+      <!--This indicates a clickable link to proceed to final jeopardy-->
+      <p><a href="final-jeopardy.html"><img src="images/finaljep2.jpg" alt="button to continue to final jeopardy"
+            title="a picture of the final jeopardy logo/ button to go to double jeopardy"></a></p>
+
+
+      <!--This is a link to the previous page aka first round jeopardy-->
+      <p><a href="/round-1.html">Previous Page</a></p>
+
+
+    </div>
+  </div>
+
+
 </body>
+
 </html>
